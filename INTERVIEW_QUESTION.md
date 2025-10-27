@@ -34,7 +34,7 @@ The feature with **higher information gain** is chosen for splitting.
 
 ---
 
-### ** How is Random Forest better than a single tree?**
+### **How is Random Forest better than a single tree?**
 - A **single decision tree** can easily overfit.  
 - A **Random Forest** builds many trees using random subsets of data and features.  
 - It averages or votes across trees → reduces **variance** and increases **accuracy**.
@@ -63,7 +63,7 @@ The feature with **higher information gain** is chosen for splitting.
 
 ---
 
-### ** How do you visualize a Decision Tree?**
+### **How do you visualize a Decision Tree?**
 
 Using **Graphviz** or **Matplotlib**:
 
