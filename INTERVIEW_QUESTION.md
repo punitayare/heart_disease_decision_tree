@@ -70,3 +70,23 @@ Using **Graphviz** or **Matplotlib**:
 ```python
 from sklearn.tree import plot_tree
 plot_tree(tree_model, filled=True, feature_names=X.columns)
+
+```python
+from sklearn.tree import export_graphviz
+import graphviz
+
+dot_data = export_graphviz(model, out_file=None, feature_names=X.columns,
+                           class_names=['No', 'Yes'], filled=True, rounded=True)
+graphviz.Source(dot_data)
+
+### **7. How do you interpret Feature Importance?**
+
+Feature importance shows which features contribute most to the model’s decisions.
+In tree-based models, it is calculated by how much each feature decreases impurity (e.g., Gini index or entropy) across all splits.
+
+### **8. What are the Pros and Cons of Random Forests?**
+
+Random Forests have several advantages and disadvantages. They are highly accurate and robust because they combine multiple decision trees, which reduces overfitting and improves generalization. They can handle large datasets, missing values, and complex non-linear relationships effectively. However, they also have some drawbacks — training can be slower compared to a single tree, the model is harder to interpret due to its ensemble nature, and it consumes more memory. Additionally, it may require tuning of hyperparameters like the number of trees or maximum depth to achieve optimal performance.
+
+
+
