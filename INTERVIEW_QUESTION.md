@@ -1,6 +1,6 @@
 # 🌳 Interview Questions — Decision Trees & Ensemble Learning
 
-### 🧠 What You'll Learn
+### What You'll Learn
 - Decision Tree working  
 - Ensemble learning (Bagging & Random Forest)  
 - Feature importance  
@@ -30,7 +30,7 @@ The process continues until a **stopping condition** (e.g., max depth or minimum
   Information\ Gain = Entropy(parent) - \text{Weighted Avg of Entropy(children)}
   \]
 
-✅ The feature with **higher information gain** is chosen for splitting.
+The feature with **higher information gain** is chosen for splitting.
 
 ---
 
@@ -58,8 +58,8 @@ The process continues until a **stopping condition** (e.g., max depth or minimum
 **Bagging (Bootstrap Aggregating)** is an ensemble method where:
 - Multiple models (e.g., trees) are trained on **random subsets** of data (with replacement).  
 - Their predictions are **averaged** (regression) or **voted** (classification).
-
-👉 Random Forest = Bagging + Random Feature Selection
+  
+ Random Forest = Bagging + Random Feature Selection
 
 ---
 
