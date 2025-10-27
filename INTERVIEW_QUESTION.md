@@ -78,7 +78,7 @@ import graphviz
 dot_data = export_graphviz(model, out_file=None, feature_names=X.columns,
                            class_names=['No', 'Yes'], filled=True, rounded=True)
 graphviz.Source(dot_data)
-
+```
 ### **7. How do you interpret Feature Importance?**
 
 Feature importance shows which features contribute most to the model’s decisions.
